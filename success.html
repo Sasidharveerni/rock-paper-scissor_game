@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="index.css" rel="stylesheet">
+    <style>
+        .bg-img {
+            text-align: center;
+            margin-left: 320px;
+            margin-top: 20px;
+        }
+        .price {
+            text-align: center;
+            position: relative;
+            right: 360px;
+        }
+        h1 {
+            color: #fff;
+            font-size: 4em;
+            text-align: center;
+            letter-spacing: 3px;
+            margin-bottom: 0;
+        }
+        p{
+            color: #fff;
+            font-size: 1.5em;
+            text-align: center;
+            letter-spacing: 3px; 
+        }
+    </style>
+</head>
+<body>
+    <img src="images/attachment.png" class="bg-img">
+    <img src="images/Vector.png" class="price" >
+    <h1>HURRAY!!</h1>
+    <p>YOU WON THE GAME</p>
+    <div class="header-3" id="rules-button">
+        RULES 
+    </div>
+    
+    <button onclick = "window.location.href='index.html'" class = 'btn' style="text-align: center; position: relative; left: 520px;"> Play Again </button>
+
+    <div id="rules" style="display: none;">
+        <h2 style="text-align: center;">GAME RULES</h2>
+        <ul class="rule-list">
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+            <li>If both players lay down the same hand, each player lays down another hand</li>
+            
+        </ul>
+        <div id="close-button">
+            <button>X</button>
+        </div>
+
+        <script>
+            document.getElementById('rules-button').addEventListener('click', function() {
+                document.getElementById('rules').style.display = 'block';
+            });
+    
+            document.getElementById('close-button').addEventListener('click', function() {
+                document.getElementById('rules').style.display = 'none';
+            });
+        </script>
+</body>
+</html>

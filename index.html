@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="item-0">
+            <h3>ROCK</h3>
+            <h3>PAPER</h3>
+            <h3>SCISSORS</h3>
+        </div>
+        <div class="item-1">
+            <h4>COMPUTER</h4>
+            <h4>SCORE</h4>
+            <p id="c-score"></p>
+        </div>
+        <div class="item-2">
+            <h4>YOUR </h4>
+            <h4> SCORE</h4>
+            <p id="user-score"></p>
+        </div>
+    </div>
+
+    
+
+
+    <div class="triangle">
+        <img width="340" height="340" src="https://img.icons8.com/ios-filled/100/000000/triangle-stroked.png" alt="triangle-stroked"/>
+    </div>
+
+
+<!-- <div class="triangle">
+
+    <svg width="400" height="200"  class="line-1">
+        <line x1="50" y1="50" x2="350" y2="50" stroke="black" stroke-width="25"  stroke-opacity="0.7"/>
+      </svg>
+
+      <svg width="500" height="200" class="line-2">
+        <line x1="50" y1="50" x2="250" y2="350" stroke="black" stroke-width="25" stroke-opacity="0.7"/>
+      </svg>
+      
+      <svg width="400" height="200" class="line-3">
+        <line x1="50" y1="150" x2="100" y2="100" stroke="black" stroke-width="25" stroke-opacity="0.7"/>
+    </svg>
+</div> -->
+    
+      
+      
+      
+
+    <div class="header-2">
+
+        <div class="first">
+
+          <div style="background-color: #0074B6; " class="icon-1">
+
+              <div class="rock">
+                <img src="images/rock.png" >
+            </div>
+          </div>
+          
+             
+           <div style="background-color: #BD00FF;" class="icon-2">
+
+               <div class="scissor">
+                <img src="images/scissor.png" >
+            </div>
+           </div>
+
+        </div>
+          
+        <div class="second">
+            <div style="background-color: #FFA943;" class="icon-3">
+              <div class="paper">
+                   <img src="images/paper.png" >
+              </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+
+    <div class="header-3" style="display: none;" id="next">
+        NEXT
+    </div>
+
+    <div class="header-3" id="rules-button">
+        RULES 
+    </div>
+       
+    <div id = 'result'>
+    </div>
+
+    <div id="rules" style="display: none;">
+        <h2 style="text-align: center;">GAME RULES</h2>
+        <ul class="rule-list">
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+            <li>If both players lay down the same hand, each player lays down another hand</li>
+            
+        </ul>
+        <div id="close-button">
+            <button>X</button>
+        </div>
+    
+
+    <script src="index.js"></script>
+    <script>
+        document.getElementById('rules-button').addEventListener('click', function() {
+            document.getElementById('rules').style.display = 'block';
+        });
+
+        document.getElementById('close-button').addEventListener('click', function() {
+            document.getElementById('rules').style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>
