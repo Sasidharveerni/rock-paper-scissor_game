@@ -125,7 +125,8 @@ function winner(userChoiceOuterHTML, randomIconHTML) {
         document.getElementById('result').innerHTML = `<div class = 'winners' style = 'margin-left: 330px;'>
                                                         <h1 style='margin-bottom: 0'> YOU WIN </h1>
                                                         <h4> AGAINST PC </h4> 
-                                                        <button onclick = 'resetGame()' class = 'btn'> PLAY AGAIN </button>
+                                                        <div style = 'text-align: center'>
+                                                        <button onclick = 'resetGame()' class = 'btn'> PLAY AGAIN </button> </div>
                                                         </div>`;
                                                         
                                                         document.getElementById('next').style.display = '';
@@ -139,7 +140,8 @@ function winner(userChoiceOuterHTML, randomIconHTML) {
         document.getElementById('result').innerHTML = `<div class = 'winners'  style = 'margin-left: 200px;' >
                                                         <h1 style='margin-bottom: 0'> YOU LOST </h1>
                                                         <h4> AGAINST PC </h4> 
-                                                        <button onclick = 'resetGame()' class = 'btn'> PlAY AGAIN </button>
+                                                        <div style = 'text-align: center'>
+                                                        <button onclick = 'resetGame()' class = 'btn'> PLAY AGAIN </button> </div>
                                                         </div>`;
 
                                                   
@@ -148,7 +150,8 @@ function winner(userChoiceOuterHTML, randomIconHTML) {
     else {
         document.getElementById('result').innerHTML = `<div class = 'winners' style = 'margin-left: 200px;' >
                                                         <h1 style='margin-bottom: 10px'> TIE UP </h1> 
-                                                        <button onclick = 'resetGame()' class = 'btn'> REPLAY </button>
+                                                        <div style = 'text-align: center'>
+                                                        <button onclick = 'resetGame()' class = 'btn'> PLAY AGAIN </button> </div>
                                                         </div>`;
     }
     function redirectToSuccessPage() {
