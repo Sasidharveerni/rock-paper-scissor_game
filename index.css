@@ -149,6 +149,12 @@ h3 {
     z-index: -1;
 }
 
+.js-line {
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
 .header-3 {
     box-sizing: border-box;
     border-radius: 5px;
@@ -179,7 +185,7 @@ h3 {
     font-size: 0.65em;
     line-height: 2;
     position: absolute;
-    top: 250px;
+    top: 400px;
     right: 50px;
 }
 
@@ -265,9 +271,10 @@ li::marker {
     z-index: -1;
 } .line-3 {
     position: absolute;
-    right: 140px;
-    bottom: -220px;
+    right: 160px;
+    bottom: -185px;
     z-index: -1;
+    
 }
 
 
