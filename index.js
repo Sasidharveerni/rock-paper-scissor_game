@@ -179,11 +179,12 @@ function createInitialHeader2Content() {
     header2.style.marginRight = '20px'
     header2.style.marginTop = '0px'
     return `
-    <div class="triangle">
-        <img width="340" height="340" src="https://img.icons8.com/ios-filled/100/000000/triangle-stroked.png" alt="triangle-stroked" style = 'opacity: 0.6;'/>
-    </div>
 
 <div class="header-2" >
+      
+<div class="triangle">
+        <img width="340" height="340" src="https://img.icons8.com/ios-filled/100/000000/triangle-stroked.png" alt="triangle-stroked" style = 'opacity: 0.6;'/>
+    </div>
 
     <div class="first">
 
